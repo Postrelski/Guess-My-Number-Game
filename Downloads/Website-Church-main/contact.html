@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body>
+    <!--------- top page -------->
+
+    <nav class="navbar">
+      <button class="hamburger" id="hamburger">
+        <img src="images/hamburger.png" alt="hambuger icon" />
+      </button>
+
+      <a class="logo" href="index.html">LITTLE ZION BAPTIST CHURCH</a>
+      <div class="topnav-right links" id="links">
+        <a class="nav-touch border" href="index.html">HOME</a>
+        <a class="nav-touch border" href="about.html">ABOUT US</a>
+        <a class="nav-touch border" href="ministries.html">MINISTRIES</a>
+        <a class="nav-touch border" href="gallery.html">GALLERY</a>
+        <a class="nav-touch border" href="contact.html">CONTACT US</a>
+        <a class="give-blue" href="https://giv.li/dac05i">GIVE</a>
+      </div>
+    </nav>
+
+    <div class="bg3">
+      <h1 class="contact">Contact Form</h1>
+      <!-- PUT EMAIL TO RECIEVE EMAIL...   https://formsubmit.co/email-link TO CREATE EMAIL YOU CAN PUT YOUR EMAIL OR PUT THE CODE FROM ACTIVATE-->
+      <form
+        action="https://formsubmit.co/lzbcglendale@yahoo.com"
+        method="POST"
+      >
+        <input type="text" name="Name" placeholder="Full Name" required />
+        <input type="text" name="Email" placeholder="Email" required />
+        <textarea name="Message" placeholder="Message" required></textarea>
+        <!-- <button type="submit">Send</button> -->
+        <button id="btn">
+          <p id="btnText">Submit</p>
+          <div class="check-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+          </div>
+        </button>
+      </form>
+
+      <!-- GOOGLE map API -->
+
+      <div id="map"></div>
+  
+      <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyDpOOT7Mp2Yrl12s7fA7KNF17onwTenx1o", v: "weekly"});</script>
+
+      <div class="email-phone">
+        <div>
+          <p>PHONE NUMBER</p>
+          <h1>+1(270)369-9143</h1>
+        </div>
+
+        <div>
+          <p>GENERAL INQUIRIES</p>
+          <h1>lzbcglendale@yahoo.com</h1>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- ------------------------ -->
+    <!-- This is the footer section -->
+    <!-- ------------------------ -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="ministries.html">Ministries</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Give</h4>
+            <ul>
+              <li><a href="https://www.givelify.com/donate/little-zion-baptist-church-glendale-ky-2j7wy5MTUwNDU0OQ==/donation/amount">
+                Donation Link</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/LZBCGlendale?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a> -->
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Where To Find Us</h4>
+            <ul>
+              <li><a>+1 (270) 369-9143</a></li>
+              <li><a>Izbcglendale@yahoo.com</a></li>
+              <li><a>151 New Glendale Rd.P.O. Box 22<br>Glendale,Ky 42740</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+<!-- // Mobile Friendly -- YES -->

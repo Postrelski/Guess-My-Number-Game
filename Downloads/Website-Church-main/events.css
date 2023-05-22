@@ -1,0 +1,92 @@
+.events-banner {
+    background-color: #262626;
+    color: white;
+    margin: 0;
+    padding: 80px;
+    text-transform: uppercase;
+  }
+  
+  /* .red{
+    height: 100px;
+    width: 180px;
+    background-color: rgb(143, 1, 1);
+  }
+   */
+  
+  
+   /* (A) SPEECH BOX */
+.speech {
+    /* (A1) FONT */
+     font-size: 1.1em;
+   
+    /* (A2) COLORS */
+    color: #fff;
+    background: #a53d38;
+   
+    /* (A3) DIMENSIONS + POSITION */
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 320px;
+  
+  }
+  
+  /* (C2) LEFT */
+.left.speech::after {
+    /* (C2-1) LEFT TRIANGLE */
+    border-right-color: #a53d38;
+    border-left: 0;
+   
+    /* (C2-2) POSITION AT LEFT */
+    left: -20px; top: 50%;
+    margin-top: -20px;
+  }
+  
+  /* (B) ADD SPEECH "CALLOUT TAIL" */
+  /* (B1) USE ::AFTER TO CREATE THE "TAIL" */
+.speech::after {
+    /* (B1-1) ATTACH TRANSPARENT BORDERS */
+    content: "";
+    border: 20px solid transparent;
+   
+    /* (B1-2) NECESSARY TO POSITION THE "TAIL" */
+    position: absolute;
+}
+  
+.event-this{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.info, .event-details{
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+    padding: none;
+}
+  
+.titleE{
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+    font-size: 40px;
+}
+  
+.event-splitter{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.bg-image-event{
+    background-image: url("images/event1.jpg");
+    height: 250px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+  
+/* add the counter css  */
+
